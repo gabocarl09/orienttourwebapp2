@@ -1,0 +1,6 @@
+@extends('RutaPadre') <!--ej: layouts.app-->
+@section('title', 'NombreTitulo') <!--ej: Usuarios-->
+
+@section('content')
+{{-- aqui va la estructura de tu vista index --}}
+@endsection
