@@ -53,7 +53,7 @@
 					</ul>
 				</div>
 			</div>
-				
+
 		</nav>
 		<!-- End Header/Navigation -->
 
@@ -88,7 +88,7 @@
 						<h2 class="mb-4 section-title">¿Porque elegirnos?.</h2>
 						<p class="mb-4">Somos la primera plataroma en ofrecerte servicios de venta de productos artesanales precolombinos de la ciudad creativa San Juan de Oriente-Nicaragua, productos realizados por artesanos culturalmente profesionales. </p>
 					</div>
-					<div class="col-lg-3"></div> 
+					<div class="col-lg-3"></div>
 					<div class="col-lg-3 ">
 						<div class="cuadrado_rosado">
 						<img src="images/Jarronanding3.png" alt="">
@@ -105,7 +105,7 @@
 		</div>
 
 		<!-- Start Why Choose Us Section -->
-		
+
 		<!-- End Why Choose Us Section -->
 
 		<!-- Start We Help Section -->
@@ -127,9 +127,8 @@
 							<li>Los mejores productos precolombinos de la ciudad creativa San Juan del Oriente con tan solo unos clicks pueden ser tuyos.</li>
 							<li>Los mejores productos precolombinos de la ciudad creativa San Juan del Oriente con tan solo unos clicks pueden ser tuyos.</li>
 							<li>Los mejores productos precolombinos de la ciudad creativa San Juan del Oriente con tan solo unos clicks pueden ser tuyos.</li>
-							
 						</ul>
-						
+
 					</div>
 				</div>
 			</div>
@@ -141,12 +140,13 @@
 			<div class="container">
 				<div class="row">
 
+
 					<div class="mapita">
-						<img src="images/mapita.png"
+						<img src="images/mapita.png">
 					</div>
-					  
-				
-						
+
+
+
 
 				</div>
 			</div>
@@ -172,7 +172,7 @@
 							</div>
 
 							<div class="testimonial-slider">
-								
+
 								<div class="item">
 									<div class="row justify-content-center">
 										<div class="col-lg-8 mx-auto">
@@ -193,7 +193,7 @@
 
 										</div>
 									</div>
-								</div> 
+								</div>
 								<!-- END item -->
 
 								<div class="item">
@@ -216,7 +216,7 @@
 
 										</div>
 									</div>
-								</div> 
+								</div>
 								<!-- END item -->
 
 								<div class="item">
@@ -250,7 +250,7 @@
 			</div>
 		</div>
 		<!-- End Testimonial Slider -->
-		
+
 		<div class="tituloVenta">
 		<img src="images/Orienttour.png">
 		<p>Los mejores productos precolombinos de la ciudad creativa San Juan del Oriente
@@ -287,7 +287,7 @@
 				</div>
 			  </div>
 		</div>
-		<!-- End Blog Section -->	
+		<!-- End Blog Section -->
 
 		<!-- Start Footer Section -->
 		<footer class="footer-section" style="background-color: #f85959b8">
@@ -296,13 +296,13 @@
 				<div class="sofa-img">
 					{{-- <img src="images/sofa.png" alt="Image" class="img-fluid"> --}}
 				</div>
-				
-    
+
+
 
 				<div class="row g-5 mb-5">
 					<div class="col-lg-4">
 						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">ORIENTTOUR<span>.</span></a></div>
-						
+
 
 						<ul class="list-unstyled custom-social">
 							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
@@ -355,7 +355,7 @@
 				<div class="border-top copyright">
 					<div class="row pt-4">
 						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a hreff="https://themewagon.com">ThemeWagon</a>  <!-- License information: https://untree.co/license/ --> </p>
+							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a hreff="https://themewagon.com">ThemeWagon</a>  </p>
 						</div>
 
 						<div class="col-lg-6 text-center text-lg-end">
@@ -370,7 +370,7 @@
 
 			</div>
 		</footer>
-		<!-- End Footer Section -->	
+		<!-- End Footer Section -->
 
 
 		<script src="js/bootstrap.bundle.min.js"></script>
