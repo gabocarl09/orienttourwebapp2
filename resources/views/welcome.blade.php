@@ -86,7 +86,7 @@
 					<!-- Start Column 1 -->
 					<div class="col-md-12 col-lg-6 mb-5 mb-lg-0">
 						<h2 class="mb-4 section-title">¿Porque elegirnos?.</h2>
-						<p class="mb-4">Somos la primera plataroma en ofrecerte servicios de venta de productos artesanales precolombinos de la ciudad creativa San Juan de Oriente-Nicaragua, productos realizados por artesanos culturalmente profesionales. </p>
+						<p class="mb-4">Somos la primera plataroma de comercialización de productos artesanales de la ciudad creativa San Juan de Oriente por lo cual te ofrecemos productos de calidad artesanal con diseños que muestran el arte, la frescura y la belleza de la ciudad creativa. </p>
 					</div>
 					<div class="col-lg-3"></div>
 					<div class="col-lg-3 ">
@@ -261,7 +261,7 @@
 		<div class="productosVenta">
 			<div class="card col-lg-4" style="width: 18rem;">
 				<div class="tiket"></div>
-				<img src="images/ceramicaAlta.png" class="card-img-top" alt="...">
+				<img src="images/Precolombin3.png" class="card-img-top" alt="...">
 				<div class="card-body cards-positions">
 				  <h5 class="card-title">Jarron</h5>
 				  <p class="card-text">Producto único en su extraordinario diseño.</p>
@@ -270,7 +270,7 @@
 			  </div>
 			  <div class="card col-lg-4" style="width: 18rem;">
 			  <div class="tiket"></div>
-				<img src="images/ceramicaAlta.png" class="card-img-top" alt="...">
+				<img src="images/Precolombin3.png" class="card-img-top" alt="...">
 				<div class="card-body cards-positions">
 				  <h5 class="card-title">Jarron</h5>
 				  <p class="card-text">Producto único en su extraordinario diseño.</p>
@@ -279,7 +279,7 @@
 			  </div>
 			  <div class="card col-lg-4" style="width: 18rem;">
 			  <div class="tiket"></div>
-				<img src="images/ceramicaAlta.png" class="card-img-top" alt="...">
+				<img src="images/Precolombin3.png" class="card-img-top" alt="...">
 				<div class="card-body cards-positions">
 				  <h5 class="card-title">Jarron</h5>
 				  <p class="card-text">Producto único en su extraordinario diseño.</p>
