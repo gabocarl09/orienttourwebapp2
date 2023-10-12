@@ -1,13 +1,9 @@
-/*
-* Template Name: UntreeStore
-* Template Author: Untree.co
-* Author URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-body {
-  overflow-x: hidden;
-  position: relative; }
+
+:root{
+
+}
+
 
 body {
   font-family: "Inter", sans-serif;
@@ -15,7 +11,11 @@ body {
   line-height: 28px;
   color: #6a6a6a;
   font-size: 14px;
-  background-color: #eff2f1; }
+  background-color: #eff2f1;
+  overflow-x: hidden;
+  position: relative;
+
+}
 
 a {
   text-decoration: none;
@@ -31,7 +31,7 @@ a {
     font-weight: 600; }
 
 .custom-navbar {
-  background: #f85959b8 !important;
+  background: #000 !important;
   padding-top: 20px;
   padding-bottom: 20px; }
   .custom-navbar .navbar-brand {
