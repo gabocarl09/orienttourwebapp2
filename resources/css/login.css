@@ -6,7 +6,8 @@
 .cont_form{
    height: 100%;
    width: 100%;
-   background-image: url(../images/Login.png); 
+   background-image: url(../images/Login.png);
+   background-repeat: no-repeat;
 }
 
 .formLogin{
@@ -82,4 +83,11 @@
     color: #ffffff;
     border: none;
     font-size: 15px;
+}
+
+@media screen and (max-width:1200px) {
+    .cont_form{
+        background-color: red;
+        background-image: none;
+    }
 }
