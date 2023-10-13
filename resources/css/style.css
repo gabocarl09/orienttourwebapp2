@@ -1,15 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 
 :root{
-    --lux: #000;
-    --carlos: #fff;
-    --kevin: #8bc34a;
     --celi: #f85959b8;
+    --kevin: #8bc34a;
+    --eden: #3b5d50;
+
+    --carlos: #fff;
+    --luz: #000;
 }
 
+*{
+    font-family: "Roboto", sans-serif;
+}
 
 body {
-  font-family: "Inter", sans-serif;
+
   font-weight: 400;
   line-height: 28px;
   color: #6a6a6a;
@@ -559,7 +565,7 @@ a {
     .footer-section .subscription-form .form-control {
       height: 50px;
       border-radius: 10px;
-      font-family: "Inter", sans-serif; }
+     }
       .footer-section .subscription-form .form-control:active, .footer-section .subscription-form .form-control:focus {
         outline: none;
         -webkit-box-shadow: none;
@@ -621,8 +627,7 @@ a {
 
 .form-control {
   height: 50px;
-  border-radius: 10px;
-  font-family: "Inter", sans-serif; }
+  border-radius: 10px;}
   .form-control:active, .form-control:focus {
     outline: none;
     -webkit-box-shadow: none;

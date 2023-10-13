@@ -1,6 +1,7 @@
-@extends('layouts.app')
 
-<x-guest-layout>
+@include('layouts.panel')
+{{-- @extends('layouts.app') --}}
+
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
     <div class="cont_form">
@@ -13,7 +14,6 @@
             @csrf
             <!-- Email Address -->
             <div>
-                <!-- <x-input-label for="email" :value="__('Email')" /> -->
                 <x-text-input id="email" class="block mt-1 w-full input_login" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" placeholder="Correo Electronico"/>
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
             </div>
@@ -35,6 +35,7 @@
                     <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                 </label>
             </div> -->
+
             <div class="requestPass">
             @if (Route::has('password.request'))
                 <a class="underline text-sm text-gray-600 hover:text-gray-900
@@ -46,10 +47,10 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <x-primary-button class="ml-3 btn-login">
+                <button class="ml-3 btn-login">
                     {{ __('Iniciar Sesión') }}
-                </x-primary-button>
+                </button>
             </div>
         </form>
     </div>
-</x-guest-layout>
+

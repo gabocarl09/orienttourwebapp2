@@ -18,10 +18,6 @@
     @vite(['resources/css/app.css', 'resources/css/landing.css', 'resources/css/login.css', 'resources/css/style.css', 'resources/css/bootstrap.min.css', 'resources/js/app.js', 'js/bootstrap.bundle.min.js', 'js/bootstrap.bundle.min.js'])
 </head>
 <body>
-
-
-    {{-- <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/custom.js"></script> --}}
+    
 </body>
 </html>
