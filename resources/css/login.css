@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --celi: #f85959b8;
+    --kevin: #8bc34a;
+    --eden: #3b5d50;
+
+    --carlos: #fff;
+    --luz: #000;
+}
+
+
 *{
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     box-sizing: none;
 }
@@ -6,15 +19,14 @@
 .cont_form{
    height: 100%;
    width: 100%;
-   background-image: url(../images/Login.png);
+   background-image: url(../img/Login.png);
    background-repeat: no-repeat;
 }
 
 .formLogin{
     height: 100vh;
-    width: 50%;
+    width: 600px;
     background-color: #000000a2;
-    border-radius: 0 15px 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +34,7 @@
 
 .formLogin h1{
     color: #ffffff;
+    font-weight: 900;
 }
 
 .orientourLogo{
@@ -40,7 +53,7 @@
     background-color: #8bc34a7f;
     color: white;
     margin: 30px 0;
-    height: 50px;
+    height: 45px;
     width: 450px;
     padding: 0 10px;
     border-radius: 15px;
@@ -76,14 +89,48 @@
 }
 
 .btn-login{
-    height: 50px;
-    width: 150px;
+    height: 40px;
+    width: 200px;
     border-radius: 15px;
+    border: none;
     background-color: #8bc34a7f;
     color: #ffffff;
     border: none;
     font-size: 15px;
 }
+
+
+/* registro */
+
+.formLogin_register{
+    height: 70px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formLogin_register_space{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.formLogin_register_space input[type="text"]{
+    height: 40px;
+    width: 200px;
+}
+
+.regist_input{
+    height: 50px;
+    width: 100%;
+}
+
+.regist_input input{
+    height: 40px;
+    width: 75%;
+    margin: 20px auto;
+}
+
 
 @media screen and (max-width:1200px) {
     .cont_form{
