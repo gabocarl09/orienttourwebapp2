@@ -17,7 +17,7 @@
 								<a href="{{ route('login') }}">Inicio de sesión</a>
 							</button>
                             <button class="landing_btn_registro">
-								<a href="{{ route('register') }}">Registrarse</a>
+								<a href="{{ route('register') }}">Registrarte</a>
 							</button>
                         </div>
     				</div>
