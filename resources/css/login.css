@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
+    /* colores principales */
     --celi: #f85959b8;
     --kevin: #8bc34a;
     --eden: #3b5d50;
 
+    /* colores form */
+    --form: #000000a2;
+    --input: #8bc34a7f;
+
+    /* colores basic */
     --carlos: #fff;
     --luz: #000;
 }
@@ -26,14 +32,14 @@
 .formLogin{
     height: 100vh;
     width: 600px;
-    background-color: #000000a2;
+    background-color: var(--form);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .formLogin h1{
-    color: #ffffff;
+    color: var(--carlos);
     font-weight: 900;
 }
 
@@ -50,24 +56,28 @@
 }
 
 .input_login{
-    background-color: #8bc34a7f;
-    color: white;
+    
+}
+
+.input_login input{
+    background-color: var(--input);
+    color: var(--carlos);
     margin: 30px 0;
     height: 45px;
     width: 450px;
     padding: 0 10px;
     border-radius: 15px;
     outline: none;
-    border: none;
+    border: 1px solid var(--carlos);
 }
 
-.input_login:focus{
-    background-color: #8bc34a7f;
-    color: white;
+.input_login input:focus{
+    background-color: var(--input);
+    color: var(--carlos);
 }
 
-.input_login::placeholder{
-    color: #ffffff;
+.input_login input::placeholder{
+    color: var(--carlos);
 }
 
 .requestPass{
@@ -80,7 +90,7 @@
 
 .requestPass a{
     margin: -25px;
-    color: #ffffff;
+    color: var(--carlos);
 }
 
 .cont_input{
@@ -93,9 +103,9 @@
     width: 200px;
     border-radius: 15px;
     border: none;
-    background-color: #8bc34a7f;
-    color: #ffffff;
-    border: none;
+    background-color: var(--input);
+    color: var(--carlos);
+    border: 1px solid var(--carlos);
     font-size: 15px;
 }
 
@@ -116,25 +126,71 @@
 }
 
 .formLogin_register_space input[type="text"]{
+    background-color: var(--input);
+    color: var(--carlos);
     height: 40px;
     width: 200px;
+}
+
+.formLogin_register_space input[type="text"]::placeholder{
+    color: var(--carlos);
+}
+
+.formLogin_register_space input[type="text"]:focus{
+    background-color: var(--input);
+    color: var(--carlos);
 }
 
 .regist_input{
     height: 50px;
     width: 100%;
+    margin-top: 20px;
 }
 
 .regist_input input{
+    background-color: var(--input);
+    color: var(--carlos);
     height: 40px;
     width: 75%;
-    margin: 20px auto;
+    margin: 0 auto;
+}
+
+.regist_input input:focus{
+    background-color: var(--input);
+    color: var(--carlos);
+}
+
+.regist_input input::placeholder{
+    color: var(--carlos);
+}
+
+.regist_btn{
+    height: 80px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.regist_btn button{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--input);
+    color: var(--carlos);
+    border: 1px solid var(--carlos);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-@media screen and (max-width:1200px) {
+
+/* @media screen and (max-width:1200px) {
     .cont_form{
         background-color: red;
         background-image: none;
     }
-}
+} */

@@ -13,12 +13,12 @@
     					<h1>San Juan de Oriente <span clsas="d-block"></span></h1>
     					<p class="mb-4">Descubre la esencia de nuestra cultura a través de nuestras artesanías y experiencias únicas.</p>
                         <div class="landing_btn">
-                            <button class="landing_btn_inicio">
-								<a href="{{ route('login') }}">Inicio de sesión</a>
-							</button>
-                            <button class="landing_btn_registro">
-								<a href="{{ route('register') }}">Registrarse</a>
-							</button>
+							<a href="{{ route('login') }}" class="landing_btn_inicio">
+                                Inicio de sesión
+                            </a>
+							<a href="{{ route('register') }}" class="landing_btn_registro">
+                                Registrarse
+                            </a>
                         </div>
     				</div>
     			</div>

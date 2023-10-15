@@ -1,6 +1,6 @@
 
-@include('layouts.panel')
-{{-- @extends('layouts.app') --}}
+@include('layouts.app')
+
 
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -13,20 +13,25 @@
             <h1>Inicio de sesión</h1>
             @csrf
             <!-- Email Address -->
-            <div>
-                <x-text-input id="email" class="block mt-1 w-full input_login" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" placeholder="Correo Electronico"/>
-                <x-input-error :messages="$errors->get('email')" class="mt-2" />
+            <div class="input_login">
+                <input id="name" type="text" class="form-control regist_input @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" placeholder="Correo electronico" autofocus>
+                @error('name')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
 
             <!-- Password -->
-            <div class="mt-4">
-                <x-text-input id="password" class="block mt-1 w-full input_login"
-                                type="password"
-                                name="password"
-                                required autocomplete="current-password" placeholder="Contraseña"/>
-
-                <x-input-error :messages="$errors->get('password')" class="mt-2" />
+            <div class="input_login">
+                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Contraseña" autofocus>
+                @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
+
 
             <!-- Remember Me -->
             <!-- <div class="block mt-4">

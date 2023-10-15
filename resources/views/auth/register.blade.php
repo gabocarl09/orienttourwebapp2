@@ -1,4 +1,4 @@
-@include('layouts.panel')
+@include('layouts.app')
 
 <div class="cont_form">
         <form method="POST" action="{{ route('register') }}" class="formLogin">
@@ -58,12 +58,13 @@
                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirmar contraseña" autofocus>
                 </div>
 
-                <div class="">
-
-                <button type="submit" class="">
-                    {{ __('Register') }}
-                </button>
-
+                <div class="regist_btn">
+                    <button type="submit" >
+                        Iniciar sesión
+                    </button>
+                    <button type="submit" class="">
+                        {{ __('Registrase') }}
+                    </button>
                 </div>
         </form>
 

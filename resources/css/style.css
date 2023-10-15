@@ -729,32 +729,27 @@ textarea {
     justify-content: space-around;
 }
 
-.landing_btn button{
+.landing_btn a{
     height: 40px;
     width: 160px;
     border-radius: 15px;
     border: none;
     box-shadow: 0px 2px 5px 0px #373030;
-}
-
-.landing_btn button a{
     text-decoration: none;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .landing_btn_inicio{
     background-color: #ffffff1e;
-}
-
-.landing_btn_inicio a{
     color: var(--carlos);
 }
 
+
 .landing_btn_registro{
     background-color: #ffffff90;
-}
-
-.landing_btn_registro a{
     color: var(--luz);
 }
 
