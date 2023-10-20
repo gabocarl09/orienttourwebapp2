@@ -1,8 +1,8 @@
-@extends('layouts.app')
 
-<x-guest-layout>
+@include('layouts.app')
+
+
     <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
     <div class="cont_form">
         <form method="POST" action="{{ route('login') }}" class="formLogin">
             <div class="orientourLogo">
@@ -12,21 +12,27 @@
             <h1>Inicio de sesión</h1>
             @csrf
             <!-- Email Address -->
-            <div>
-                <!-- <x-input-label for="email" :value="__('Email')" /> -->
-                <x-text-input id="email" class="block mt-1 w-full input_login" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" placeholder="Correo Electronico"/>
-                <x-input-error :messages="$errors->get('email')" class="mt-2" />
+            <div class="input_login">
+                <input id="email" type="text" class="form-control regist_input @error('name') is-invalid @enderror" id="email" type="email" name="email"
+                value="{{ old('email') }}" required autocomplete="email" placeholder="Correo electronico" autofocus>
+                @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
 
             <!-- Password -->
-            <div class="mt-4">
-                <x-text-input id="password" class="block mt-1 w-full input_login"
-                                type="password"
-                                name="password"
-                                required autocomplete="current-password" placeholder="Contraseña"/>
-
-                <x-input-error :messages="$errors->get('password')" class="mt-2" />
+            <div class="input_login">
+                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" id="password" type="password" name="password" required
+                autocomplete="current-password" placeholder="Contraseña" autofocus>
+                @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
+
 
             <!-- Remember Me -->
             <!-- <div class="block mt-4">
@@ -35,6 +41,7 @@
                     <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                 </label>
             </div> -->
+
             <div class="requestPass">
             @if (Route::has('password.request'))
                 <a class="underline text-sm text-gray-600 hover:text-gray-900
@@ -46,10 +53,10 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <x-primary-button class="ml-3 btn-login">
+                <button class="ml-3 btn-login">
                     {{ __('Iniciar Sesión') }}
-                </x-primary-button>
+                </button>
             </div>
         </form>
     </div>
-</x-guest-layout>
+
