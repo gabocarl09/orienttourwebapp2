@@ -13,11 +13,24 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="css/tiny-slider.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
     <title>ORIENTTOUR </title>
 
-    @vite(['resources/css/app.css', 'resources/css/landing.css', 'resources/css/login.css', 'resources/css/style.css', 'resources/css/bootstrap.min.css', 'resources/js/app.js', 'js/bootstrap.bundle.min.js', 'js/bootstrap.bundle.min.js'])
+    @vite(['resources/css/app.css', 'resources/css/home.css', 'resources/css/login.css', 'resources/css/style.css', 'resources/js/main.js', 'resources/js/app.js', 'js/bootstrap.bundle.min.js', 'js/bootstrap.bundle.min.js'])
 </head>
 <body>
-    
+    <!-- menu -->
+    @include('includes/panel/menu')
+
+    <!-- navbar -->
+    @include('includes/panel/nav')
+
+    @yield('content')
+
+
 </body>
 </html>
