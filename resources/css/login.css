@@ -55,10 +55,6 @@
     width: 500px;
 }
 
-.input_login{
-    
-}
-
 .input_login input{
     background-color: var(--input);
     color: var(--carlos);
@@ -107,6 +103,25 @@
     color: var(--carlos);
     border: 1px solid var(--carlos);
     font-size: 15px;
+}
+
+.regist_account{
+    height: 100px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.regist_account p{
+    color: var(--carlos);
+}
+
+.regist_account a{
+    color: var(--celi);
+    font-weight: 700;
+    text-decoration: none;
 }
 
 
@@ -188,9 +203,9 @@
 
 
 
-/* @media screen and (max-width:1200px) {
+@media screen and (max-width:1000px) {
     .cont_form{
-        background-color: red;
-        background-image: none;
+        display: flex;
+        justify-content: center;
     }
-} */
+}
