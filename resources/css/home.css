@@ -11,6 +11,8 @@
     --nav: #f8595981;
     --cont_public: #f1f1f1;
 
+
+
     /* colores form */
     --input: #8bc34a7f;
     --form: #000000a2;
@@ -20,6 +22,7 @@
     --gris: #828282;
     --carlos: #fff;
     --luz: #000;
+
 }
 
 *{
@@ -32,7 +35,6 @@
     display: grid;
     grid-template-columns: 18% 82%;
     grid-template-rows: 33%;
-    transition: all .4s;
 }
 
 /* menu */

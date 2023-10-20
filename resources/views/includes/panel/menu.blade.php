@@ -25,6 +25,8 @@
 
             <li class="nav-list-item {{ Request::is('category') ? 'active' : '' }}">
                 <a class="nav-list-item-a" href="{{ route('category') }}">
+
+
                     <i class="fi fi-rr-apps icon-list"></i>
                     <p>Categorias</p>
                 </a>
@@ -37,12 +39,12 @@
                 </a>
             </li>
 
+
             <li class="nav-list-item {{ Request::is('map') ? 'active' : '' }} {{ Request::is('posts/show/post/7') ? 'active' : '' }}">
                 <a class="nav-list-item-a" href="{{ route('map') }}">
                     <i class="fi fi-rr-marker icon-list"></i>
                     <p>Mapa</p>
                 </a>
             </li>
-
         </ul>
     </nav>
