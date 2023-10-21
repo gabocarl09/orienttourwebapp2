@@ -18,12 +18,33 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
+
+Route::get('/post', [App\Http\Controllers\PostController::class, 'show'])->name('post.show');
+
+// Ruta para las Categorias
+Route::get('/category', [App\Http\Controllers\CategoryController::class, 'index'])->name('category');
+Route::post('/category/{name}', [App\Http\Controllers\CategoryController::class, 'show'])->name('category/show');
+
+Route::get('/favorite', [App\Http\Controllers\FavoriteController::class, 'index'])->name('favorite');
+
+Route::get('/map', [App\Http\Controllers\MapController::class, 'index'])->name('map');
+
+Route::get('/option/sold', [App\Http\Controllers\OptionController::class, 'sold'])->name('option.sold');
+
+Route::get('/option/recomendation', [App\Http\Controllers\RecomendationController::class, 'recomendation'])->name('option.recomendation');
+
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    // Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
@@ -31,5 +52,3 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -1,41 +1,21 @@
-@extends('layouts.app')
+@extends('layouts.panel')
 
-@section('template_title')
-    {{ $category->name ?? "{{ __('Show') Category" }}
-@endsection
+@section('title', $category->name)
 
 @section('content')
-    <section class="content container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="float-left">
-                            <span class="card-title">{{ __('Show') }} Category</span>
-                        </div>
-                        <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('categories.index') }}"> {{ __('Back') }}</a>
-                        </div>
-                    </div>
-
-                    <div class="card-body">
-                        
-                        <div class="form-group">
-                            <strong>Category Name:</strong>
-                            {{ $category->category_name }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Pictures:</strong>
-                            {{ $category->pictures }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Homepages Id:</strong>
-                            {{ $category->homepages_id }}
-                        </div>
-
-                    </div>
-                </div>
+    <h1>{{ $category->name }}</h1>
+    @if (count($posts) == 0)
+        <h2>No hay publicaciones en esta categoria</h2>
+        <a href="{{ route('category') }}">Regresar</a>
+    @else
+    {{-- <div id="card-animated">
+        <div class="card-resposive">
+            <div class="card-area">
+                @foreach ($posts as $post)
+                    @include('components.posts.card')
+                @endforeach
             </div>
         </div>
-    </section>
+    </div> --}}
+    @endif
 @endsection
