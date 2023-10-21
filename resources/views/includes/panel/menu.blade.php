@@ -16,7 +16,7 @@
         </a>
 
         <ul class="nav-list">
-            <li class="nav-list-item {{ Request::is('home') ? 'active' : '' }}">
+            <li class="nav-list-item {{ Request::is('/') ? 'active' : '' }}">
                 <a class="nav-list-item-a" href="/home">
                     <i class="fi fi-rr-star icon-list"></i>
                     <p>Inicio</p>
