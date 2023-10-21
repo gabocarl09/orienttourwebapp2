@@ -24,7 +24,6 @@ Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])
 
 Route::get('/post', [App\Http\Controllers\PostController::class, 'show'])->name('post.show');
 
-
 Route::get('/category', [App\Http\Controllers\CategoryController::class, 'index'])->name('category');
 
 Route::get('/favorite', [App\Http\Controllers\FavoriteController::class, 'index'])->name('favorite');
