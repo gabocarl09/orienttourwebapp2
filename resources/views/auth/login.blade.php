@@ -1,9 +1,6 @@
-
 @include('layouts.app')
 
-
     <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
     <div class="cont_form">
         <form method="POST" action="{{ route('login') }}" class="formLogin">
             <div class="orientourLogo">
@@ -14,8 +11,9 @@
             @csrf
             <!-- Email Address -->
             <div class="input_login">
-                <input id="name" type="text" class="form-control regist_input @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" placeholder="Correo electronico" autofocus>
-                @error('name')
+                <input id="email" type="text" class="form-control regist_input @error('name') is-invalid @enderror" id="email" type="email" name="email"
+                value="{{ old('email') }}" required autocomplete="email" placeholder="Correo electronico" autofocus>
+                @error('email')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
@@ -24,7 +22,8 @@
 
             <!-- Password -->
             <div class="input_login">
-                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Contraseña" autofocus>
+                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" id="password" type="password" name="password" required
+                autocomplete="current-password" placeholder="Contraseña" autofocus>
                 @error('password')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -34,12 +33,13 @@
 
 
             <!-- Remember Me -->
-            <!-- <div class="block mt-4">
+
+            {{-- <div class="block mt-4">
                 <label for="remember_me" class="inline-flex items-center">
                     <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
                     <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                 </label>
-            </div> -->
+            </div> --}}
 
             <div class="requestPass">
             @if (Route::has('password.request'))
@@ -52,9 +52,14 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <button class="ml-3 btn-login">
+                <button class="ml-3 btn-login" type="submit">
                     {{ __('Iniciar Sesión') }}
                 </button>
+            </div>
+
+            <div class="regist_account">
+                <p>No tienes una cuenta?</p>
+                <a href="{{ route('register') }}">Registrarse</a>
             </div>
         </form>
     </div>

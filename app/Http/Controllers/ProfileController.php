@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
+use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -11,9 +12,29 @@ use Illuminate\View\View;
 
 class ProfileController extends Controller
 {
-    /**
-     * Display the user's profile form.
-     */
+
+    public function index($user_id = null)
+    {
+        if ($user_id === null) {
+            // Obtener el usuario autenticado
+            $user = Auth::user();
+        } else {
+            // Obtener el usuario según el $user_id proporcionado
+            $user = User::find($user_id);
+        }
+
+        if ($user === null) {
+            // Manejo de error si el usuario no se encuentra
+            // Puedes redirigir o mostrar un mensaje de error
+            return redirect()->route('index/profile')->with('error', 'Usuario no encontrado');
+        }
+
+        // $profile = $user->profile;
+        // $posts = Post::latest()->where('id_user', $user->id)->get();
+
+        return view('profile.index');
+    }
+
     public function edit(Request $request): View
     {
         return view('profile.edit', [

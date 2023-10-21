@@ -15,10 +15,8 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('category_name');
-            $table->binary('pictures');
-            $table->integer('homepages_id')->unsigned();
-            $table->foreign('homepages_id')->references('id')->on('homepages')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('name');
+            $table->string('picture')->nullable();
             $table->timestamps();
         });
     }
