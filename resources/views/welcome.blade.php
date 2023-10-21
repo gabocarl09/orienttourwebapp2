@@ -1,5 +1,5 @@
 
-@include('layouts.panel')
+@include('layouts.app')
 
     <!-- Inicio landing -->
     <div class="hero init_landing">

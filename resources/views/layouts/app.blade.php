@@ -15,13 +15,14 @@
     <link href="css/style.css" rel="stylesheet">
     <title>ORIENTTOUR </title>
 
-    @vite(['resources/css/app.css', 'resources/css/landing.css', 'resources/css/login.css', 'resources/css/style.css', 'resources/css/bootstrap.min.css', 'resources/js/app.js', 'js/bootstrap.bundle.min.js', 'js/bootstrap.bundle.min.js'])
+    @vite(['resources/css/app.css', 'resources/css/landing.css', 'resources/css/login.css', 'resources/css/style.css', 'resources/css/bootstrap.min.css', 'resources/js/main.js', 'resources/js/app.js', 'js/bootstrap.bundle.min.js', 'js/bootstrap.bundle.min.js'])
 </head>
 <body>
+    @include('components.loader')
     <div id="app">
-
-
-
+        <main class="py-4">
+            @yield('content')
+        </main>
     </div>
 </body>
 </html>

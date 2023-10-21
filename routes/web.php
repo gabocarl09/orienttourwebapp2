@@ -18,6 +18,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/category', [App\Http\Controllers\CategoryController::class, 'index'])->name('category');
+
+Route::get('/favorite', [App\Http\Controllers\FavoriteController::class, 'index'])->name('favorite');
+
+Route::get('/map', [App\Http\Controllers\MapController::class, 'index'])->name('map');
+
+Route::get('/option/sold', [App\Http\Controllers\OptionController::class, 'sold'])->name('option.sold');
+
+Route::get('/option/recomendation', [App\Http\Controllers\RecomendationController::class, 'recomendation'])->name('option.recomendation');
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -31,5 +45,3 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
