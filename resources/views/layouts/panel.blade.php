@@ -23,6 +23,7 @@
     @vite(['resources/css/app.css', 'resources/css/home.css', 'resources/css/login.css', 'resources/css/style.css', 'resources/js/main.js', 'resources/js/app.js', 'js/bootstrap.bundle.min.js', 'js/bootstrap.bundle.min.js'])
 </head>
 <body>
+
     <!-- loader -->
     @include('components.loader')
 
@@ -32,9 +33,7 @@
     <!-- navbar -->
     @include('includes/panel/nav')
 
-
     @yield('content')
-
 
 </body>
 </html>

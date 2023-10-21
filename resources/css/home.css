@@ -8,6 +8,7 @@
 
     /* colores exoticos */
     --star: #F97C7C;
+
     --nav: #f8595981;
     --cont_public: #f2f0f0;
 
@@ -20,6 +21,7 @@
     --gris: #828282;
     --carlos: #fff;
     --luz: #000;
+
 }
 
 *{
@@ -224,7 +226,7 @@
     height: auto;
     margin: 0 auto;
     border-radius: 20px;
-    box-shadow: 0 2px 5px var(--gris);
+
 }
 
 .header_list_opt ul{

@@ -8,6 +8,7 @@
         </div>
 
         <a class="nav-info-user" href="{{ route('profile') }}">
+
             <img src="" alt="">
             <div class="nav-info-user-p">
                 <p>Nombre completo</p>
@@ -20,6 +21,7 @@
                 {{ Request::is('option/sold') ? 'active' : '' }}
                 {{ Request::is('option/recomendation') ? 'active' : '' }}
                 {{ Request::is('post') ? 'active' : '' }}">
+
                 <a class="nav-list-item-a" href="/home">
                     <i class="fi fi-rr-star icon-list"></i>
                     <p>Inicio</p>
