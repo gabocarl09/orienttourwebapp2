@@ -1,5 +1,5 @@
 
-@include('layouts.panel')
+@include('layouts.app')
 
     <!-- Inicio landing -->
     <div class="hero init_landing">
@@ -90,7 +90,7 @@
             de la ciudad creativa San Juan del
             Oriente con tan solo unos clicks
             pueden ser tuyos.</p>
-        <img src="{{ asset('images/mapa.png') }}">
+        <img src="{{ asset('images/mapaLanding.png') }}">
     </div>
 
     <!-- Fin sección 4 -->
