@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
+
             $table->string('name');
             $table->text('description');
             $table->string('image');
             $table->integer('quantity');
+
             $table->float('price');
 
             //relacion con categorias
@@ -26,6 +28,7 @@ return new class extends Migration
             //relacion con los usuarios
             // $table->integer('id_user')->unsigned();
             // $table->foreign('id_user')->references('id')->on('users')->ondelete('cascade')->onUpdate('cascade');
+
             $table->timestamps();
         });
     }

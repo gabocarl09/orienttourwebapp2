@@ -37,6 +37,7 @@ class CategorySeeder extends Seeder
             [
                 'name' => 'Otros...',
                 'picture' => 'images/category/Otros.png',
+
             ],
         ];
 

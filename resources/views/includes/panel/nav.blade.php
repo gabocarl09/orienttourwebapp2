@@ -14,7 +14,6 @@
             <button class="hdr-cont-input-btn">
                 <i class="fi fi-rr-search"></i>
             </button>
-            @endif
         </div>
 
 

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -27,6 +27,7 @@ Route::get('/category', [App\Http\Controllers\CategoryController::class, 'index'
 Route::post('/category/{name}', [App\Http\Controllers\CategoryController::class, 'show'])->name('category/show');
 //Categories End
 
+
 Route::get('/favorite', [App\Http\Controllers\FavoriteController::class, 'index'])->name('favorite');
 
 Route::get('/map', [App\Http\Controllers\MapController::class, 'index'])->name('map');
@@ -34,7 +35,6 @@ Route::get('/map', [App\Http\Controllers\MapController::class, 'index'])->name('
 Route::get('/option/sold', [App\Http\Controllers\OptionController::class, 'sold'])->name('option.sold');
 
 Route::get('/option/recomendation', [App\Http\Controllers\RecomendationController::class, 'recomendation'])->name('option.recomendation');
-
 
 Route::get('/dashboard', function () {
     return view('dashboard');
