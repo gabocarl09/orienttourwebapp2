@@ -14,7 +14,6 @@
             <button class="hdr-cont-input-btn">
                 <i class="fi fi-rr-search"></i>
             </button>
-            @endif
         </div>
 
 
@@ -22,6 +21,7 @@
 
             <div class="hdr-cont-3-users">
                 <div class="dropdown" id="user-dropdown">
+
                     <i class="fi fi-rr-settings"></i>
 
                     <i class="fi fi-br-caret-down"></i>

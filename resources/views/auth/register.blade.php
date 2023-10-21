@@ -19,6 +19,7 @@
                     <div class="formLogin_register_space">
                         <input id="last_name" type="text" class="form-control inputChiquito @error('last_name') is-invalid @enderror" name="last_name" value="{{ old('last_name') }}" required autocomplete="last_name"  placeholder="Apellido" autofocus>
                         @error('last_name')
+
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>

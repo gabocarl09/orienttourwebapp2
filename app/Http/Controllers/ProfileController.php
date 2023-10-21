@@ -12,7 +12,6 @@ use Illuminate\View\View;
 
 class ProfileController extends Controller
 {
-
      public function index($user_id = null)
      {
          if ($user_id === null) {

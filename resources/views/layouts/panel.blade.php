@@ -32,9 +32,7 @@
     <!-- navbar -->
     @include('includes/panel/nav')
 
-
+    
     @yield('content')
-
-
 </body>
 </html>

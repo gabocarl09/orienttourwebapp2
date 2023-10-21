@@ -48,3 +48,37 @@
 
 @endsection
 
+    <div class="home_cont_title">
+        <h1>Para ti</h1>
+    </div>
+
+    <section class="forYou">
+
+        <div class="cards">
+            <div class="cards_filo"></div>
+            <img src="" alt="">
+            <div class="cards_info">
+                <h4>Nombre producto</h4>
+                <div class="cards_info_stars">
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Soluta illum modi
+                    omnis temporibus. Quae praesentium
+                    maiores aliquam, consequatur soluta
+                    magnam!</p>
+            </div>
+            <div class="cards_btn">
+                <button>C$100</button>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+@endsection
+

@@ -26,6 +26,7 @@
                 {{ Request::is('option/sold') ? 'active' : '' }}
                 {{ Request::is('option/recomendation') ? 'active' : '' }}
                 {{ Request::is('post') ? 'active' : '' }}">
+
                 <a class="nav-list-item-a" href="/home">
                     <i class="fi fi-rr-star icon-list"></i>
                     <p>Inicio</p>

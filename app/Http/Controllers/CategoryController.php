@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Support\Facades\Auth;
+
+
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller

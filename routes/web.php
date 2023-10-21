@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -35,9 +35,6 @@ Route::get('/map', [App\Http\Controllers\MapController::class, 'index'])->name('
 Route::get('/option/sold', [App\Http\Controllers\OptionController::class, 'sold'])->name('option.sold');
 
 Route::get('/option/recomendation', [App\Http\Controllers\RecomendationController::class, 'recomendation'])->name('option.recomendation');
-
-
-
 
 Route::get('/dashboard', function () {
     return view('dashboard');

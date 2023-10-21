@@ -10,12 +10,14 @@
             <li class="head_list_opt {{ Request::is('option/recomendation') ? 'optionActive' : '' }}">
                 <a href="{{ route('option.recomendation') }}">Recomendaciones</a>
             </li>
+
             <li class="head_list_opt {{ Request::is('') ? 'optionActive' : '' }}">
                 <a href="#">Provicional</a>
             </li>
             <li class="head_list_opt {{ Request::is('') ? 'optionActive' : '' }}">
                 <a href="#">Provicional</a>
             </li>
+
         </ul>
     </div>
 </header>
